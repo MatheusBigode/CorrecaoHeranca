@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/correcao2.js"></script>
+    <script src="/js/correcao1.js"></script>
+</head>
+<body>
+    <script>
+        //ATIVIDADE 1
+
+        console.log('\n','\n','ATIVIDADE 1','\n');
+
+        let tenis = new Comum('Tênis', 200, 'Comum')
+        let copo = new Usado('Copo', 10, 'Usado')
+        let camisa = new Importado('Camisa', 40, 'Importado')
+        
+        tenis.display()
+        copo.display()
+        camisa.display()
+
+
+        //ATIVIDADE 2
+
+        console.log('\n','\n','ATIVIDADE 2','\n');
+
+        let camelo = new Animal('Camelo', 150, 4, 'Amarelo', 'Deserto', '18m/s')
+        camelo.Dados(camelo)
+
+        let peixe = new Peixe ('Tubarão', 300, 0, "Cinza", "Oceanos", '5.2m/s', 'Barbatanas')
+        peixe.AlterarNome('Tutu Barão')
+        console.log(peixe.RetornarCaracteristica())
+        peixe.Dados(peixe)
+
+        let mamifero = new Mamifero('Urso-do-Canadá', 180, 4, 'Vermelho', 'Floresta', '17.7m/s', 'Peixe')
+
+        mamifero.Dados(mamifero)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Produtos {
+            constructor(nome,preço, estado,) {
+                this.nome = nome;
+                this.preço = preço;
+                this.estado = estado;
+                     
+            }
+            
+            condicao() {
+                    if(this.estado == "Usado") {
+                        this.preço = this.preço - (this.preço * 0.2)
+                        console.log(this.preço)
+                    } else if (this.estado == "Importado"){
+                        this.preço = this.preço + this.preço
+                        console.log(this.preço)
+                    } else if (this.estado == "Novo"){
+                        this.preço = this.preço
+                        console.log(this.preço)
+                    }
+                } 
+            
+        }
+
+        
+
+        let produto1 = new Produtos ("Calça", 70, "Usado");
+        let produto2 = new Produtos ("Camisa", 100, "Importado");
+        let produto3 = new Produtos ("Tenis", 200, "Novo");
+
+        console.log(produto1.nome, "\n Estado: " + produto1.estado, "\n Preço: R$" + produto1.condicao())
+        console.log(produto2.nome, "\n Estado: " + produto2.estado, "\n Preço: R$" + produto2.condicao())
+        console.log(produto3.nome, "\n Estado: " + produto3.estado, "\n Preço: R$" + produto3.condicao())
+    </script>
+</body>
+</html>
